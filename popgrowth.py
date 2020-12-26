@@ -7,7 +7,7 @@
 import matplotlib
 import matplotlib.pyplot as plt
 
-def Malthusian_pop_growth(r, x): # model / function
+def Pop_growth(r, x): # model / function
 
     total = (r*x*(1 - x))        # r = rate of growth, x = population size
     return total
@@ -21,13 +21,13 @@ i = 1
 
 for i in range(100):
 
-    print(Malthusian_pop_growth(a, b))
+    print(Pop_growth(a, b))
 
-    b = Malthusian_pop_growth(a, b)    # set b = previous population size
+    b = Pop_growth(a, b)    # set b = previous population size
     i+=1
 
-    plt.scatter(b, b)
-    plt.pause(.01)
+    plt.scatter(i, b)
+    plt.pause(.3)
 
 
 plt.grid()
