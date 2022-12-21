@@ -14,7 +14,7 @@ def Pop_growth(r, x): # model / function
 
 
 
-a, b = 2.7, .02     # rate of growth(a(r)) = 2.7, initial pop size(b(x)) = .02
+a, b = 2.7, .02     # rate of growth a = r = 2.7, initial pop size b = x = .02
 i = 1
 
 #plt.axis([0, 1, 0, 1])
